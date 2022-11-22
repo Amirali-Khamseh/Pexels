@@ -1,0 +1,85 @@
+body{
+    /* background: #000; */
+}
+:root{
+    --base-color:rgba(37, 37, 37, 0.406);
+}
+
+button{
+    font-size: 20px;
+    border: none;
+    outline: 0;
+
+    padding: 15px;
+    border-radius: 15px;
+    width: 70px;
+    color: rgb(5, 5, 5);
+    margin-bottom: 20px;
+}
+.container{
+    /* background: white; */
+    width: 80%;
+    height: 900px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(3,1fr) ;
+    gap: 10px;
+   
+}
+.cards{
+   border-radius: 20px;
+   position: relative;
+    box-shadow: 5px 5px white;
+    padding: 40px;
+    background:var(--base-color);
+}
+.cards>video{
+    
+        position: absolute; 
+        right: 0; 
+        bottom: 0;
+        width: 100%;
+        height:100% ;
+        object-fit: contain;
+        border-radius: 20px;
+        outline: 0;
+        
+    
+        
+    
+}
+.cards:nth-of-type(1){
+    grid-column: 1 / span 2;
+    grid-row: 1 /span 1;
+    /* background:var(--base-color); */
+}
+.cards:nth-of-type(2){
+  grid-row: 1/span 2;
+  grid-column: 3/span 1;
+   
+    /* background:var(--base-color); */
+}
+
+.cards:nth-of-type(3){
+     grid-row: 2/ span 2;
+     grid-column: 1/ span 1;
+      /* background: var(--base-color); */
+  }
+
+  .cards:nth-of-type(5){
+    grid-column: 2/span 2;
+    grid-row: 3/span 1;
+     /* background: var(--base-color); */
+ }
+
+ .output{
+    background:var(--base-color);
+    display: none;
+ }
+
+ #button-container{
+    display: flex;
+    justify-content: space-evenly;
+    display: none;
+ }
